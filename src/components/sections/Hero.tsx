@@ -48,12 +48,12 @@ export function Hero() {
         <motion.div
           {...fadeInUp}
           transition={{ ...transitions.default, delay: 0.3 }}
-          className="flex items-center gap-3.5 mt-6"
+          className="flex flex-col sm:flex-row items-center gap-3 sm:gap-3.5 mt-6 w-full sm:w-auto px-4 sm:px-0"
         >
-          <Button variant="primary" size="lg" asChild>
+          <Button variant="primary" size="lg" className="w-full sm:w-auto" asChild>
             <Link href="/waitlist">Join Waiting List</Link>
           </Button>
-          <Button variant="glass" size="lg">
+          <Button variant="glass" size="lg" className="w-full sm:w-auto">
             See How It Works
           </Button>
         </motion.div>
@@ -74,7 +74,7 @@ export function Hero() {
           transition={{ ...transitions.slow, delay: 0.4 }}
           className="w-full -mt-40 -mb-20"
         >
-          <div className="[perspective:1200px] max-w-[1100px] mx-auto translate-x-[15%] md:translate-x-[10%] lg:translate-x-[5%]">
+          <div className="[perspective:1200px] max-w-[1100px] mx-auto translate-x-0 md:translate-x-[10%] lg:translate-x-[5%]">
             <div className="[transform:rotateX(20deg)] scale-[0.85] lg:scale-90 origin-top">
               <div className="relative skew-x-[.36rad]">
                 <DashboardPreview />
