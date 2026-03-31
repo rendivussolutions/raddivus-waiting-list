@@ -19,13 +19,13 @@ export function Hero() {
           transition={{ ...transitions.default, delay: 0.1 }}
           className="inline-flex items-center gap-2 md:gap-3.5 pl-0.5 pr-3 md:pr-5 py-0.5 bg-white/5 rounded-[10px] border border-neutral-800 mb-8"
         >
-          <span className="inline-flex items-center gap-1.5 md:gap-2 px-2.5 md:px-4 py-1 md:py-1.5 bg-neutral-950 rounded-lg">
+          <span className="inline-flex items-center gap-1.5 md:gap-2 px-2.5 md:px-4 py-1 md:py-1.5 bg-neutral-950 rounded-lg whitespace-nowrap">
             <Sparkles className="w-2.5 h-2.5 md:w-3 md:h-3 text-zinc-300" />
             <span className="text-zinc-300 text-2xs md:text-xs font-medium leading-5">
               Coming Soon
             </span>
           </span>
-          <span className="text-stone-300 text-2xs md:text-xs font-medium leading-5">
+          <span className="hidden sm:inline text-stone-300 text-2xs md:text-xs font-medium leading-5 whitespace-nowrap">
             We&apos;re building something great — Join the waitlist
           </span>
         </motion.div>
